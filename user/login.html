@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-400 h-screen flex items-center justify-center">
+
+    <div class="bg-teal-700 bg-opacity-30 p-8 rounded-lg shadow-lg w-96">
+        <!-- User Login Title -->
+        <div class="text-center mb-6">
+            <img src="http://127.0.0.1:5500/img/gobiz.png" alt="User Icon" class="mx-auto w-16 h-16">
+            <h2 class="text-2xl font-semibold text-white">USER LOGIN</h2>
+        </div>
+
+        <!-- Login Form -->
+        <form action="#" class="space-y-4">
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-white mb-1">Email ID</label>
+                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:border-white">
+            </div>
+
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block text-white mb-1">Password</label>
+                <input type="password" id="password" class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:border-white">
+            </div>
+
+            <!-- Remember Me & Forgot Password -->
+            <div class="flex justify-between items-center text-sm text-gray-300">
+                <div>
+                    <input type="checkbox" id="remember" class="mr-2">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <a href="#" class="hover:text-white">Forgot Password?</a>
+            </div>
+
+            <!-- Login Button -->
+            <div>
+                <button type="submit" class="w-full bg-black hover:bg-opacity-70 text-white py-2 rounded-lg font-semibold">LOGIN</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
