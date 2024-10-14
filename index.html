@@ -25,25 +25,31 @@
     <meta name="twitter:image" content="img/square.webp">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/food-package.png" type="image/x-icon">
     
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.webp" alt="GoBiz Logo">
+    <header class="bg-white sticky top-0">
+        <nav class="grid grid-cols-4 flex items-center px-10 py-2">
+            <div class="w-16">
+                <img class="rounded-[50%]" src="img/gobiz.png" alt="GoBiz Logo">
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Bantuan</a></li>
-                <li><a href="#">BizTips</a></li>
-                <li><a href="#">Komunitas</a></li>
+            <ul class="flex col-span-2 justify-center gap-32 items-center">
+                <li class="font-['Roboto_Condensed'] text-xl"><a class="font-bold" href="#">About</a></li>
+                <li class="font-['Roboto_Condensed'] text-xl"><a class="font-bold" href="contact.html">Contact</a></li>
+                <li class="font-['Roboto_Condensed'] text-xl"><a class="font-bold" href="#">BizTips</a></li>
+                <li class="font-['Roboto_Condensed'] text-xl"><a class="font-bold" href="#">Komunitas</a></li>
             </ul>
-            <div class="auth-buttons">
-                <button class="btn btn-signup">Daftar</button>
-                <button class="btn btn-login">Masuk</button>
+            <div class="flex justify-end gap-6">
+                <a href="" class="bg-green-300 px-4 py-2 rounded-lg border-2 border-blue-900 hover:bg-green-600 duration-500">
+                    <p>Login</p>
+                </a>
+                <a href="" class="bg-white px-4 py-2 rounded-lg border-2 border-blue-900 hover:bg-gray-300 duration-500">
+                    <p>Register</p>
+                </a>
             </div>
         </nav>
     </header>
@@ -101,12 +107,6 @@
         <div class="testimonial">
             <p>"Fitur dalam aplikasi GoBiz sangat mempermudah dalam mengelola usaha kuliner."</p>
             <p>Nedi Sopian, Pemilik pasakanambu</p>
-        </div>
-        <div class="testimonial-video">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
         </div>
     </section>
 
