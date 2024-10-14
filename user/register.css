@@ -1,0 +1,99 @@
+/* Mengatur font untuk seluruh elemen di body */
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    background: linear-gradient(135deg, #6D83F2, #8E61FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Style untuk container halaman register */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    max-width: 100%;
+    padding: 40px;
+    position: relative;
+    animation: fadeIn 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style heading untuk judul "Register" */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Style untuk input form */
+.container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.container input:focus {
+    border-color: #8E61FF;
+}
+
+/* Style untuk tombol register */
+.container button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #6D83F2, #8E61FF);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.container button:hover {
+    background: linear-gradient(90deg, #5A71E0, #7A4DFF);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk link login di bawah form */
+.container .switch-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.container .switch-link a {
+    color: #8E61FF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.container .switch-link a:hover {
+    color: #624FC9;
+    text-decoration: underline;
+}
