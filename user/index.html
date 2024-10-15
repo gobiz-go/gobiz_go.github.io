@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoBiz</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky top-0 bg-white">
+        <nav class="px-12 grid grid-cols-4 py-4 items-center">
+            <div class="flex gap-5 items-center">
+                <img src="http://127.0.0.1:5501/assets/img/gobiz.png" alt="Profile Picture" class="rounded-[50%] w-8 h-8">
+                <p>GoBiz</p>
+            </div>
+            <ul class="flex justify-center gap-12 col-span-2">
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">BizTips</a></li>
+                <li><a href="#">Komunitas</a></li>
+            </ul>
+            <div class="flex justify-end">
+                <a href="" class="bg-red-500 py-2 px-4 rounded-3xl font-semibold text-white">
+                    <p>Logout</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-12">
+
+        <!-- ==== search section ==== -->
+        <section class="py-4 flex justify-center gap-2 items-center">
+            <div class="flex justify-center gap-2 items-center border-2 border-black rounded-3xl px-2">
+                <input type="search" id="searchInput" placeholder="Cari Resto" class="rounded-3xl w-96 px-4 py-2 focus:outline-none">
+                <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" alt="Search Icon" class="rounded-[50%] w-8 h-8 cursor-pointer">
+            </div>
+        </section>
+        <!-- ==== end of search section ==== -->
+
+        <!-- ==== Toko Section ==== -->
+        <section class="pb-12">
+            <h1 class="font-semibold text-2xl">Laper? Yuk pesan sekarang disini!</h1>
+            <p class="pb-4">Caranya gampang banget, tinggal klik pesan nanti muncul menunya.</p>
+            <div id="tokoContainer" class="grid grid-cols-4 gap-4">
+                <!-- Toko Card -->
+                <div class="bg-gray-200 rounded-2xl bg-[url('https://bisnismuda.id/assets/content/20240704114126000000warmindo.jpg')] bg-cover toko-card">
+                    <div class="bg-gradient-to-b from-transparent to-[#121212] h-80 rounded-2xl p-3 grid grid-cols-1">
+                        <div class="h-40"></div>
+                        <h1 class="text-white text-xl font-semibold toko-name">Warung Pak Nana</h1>
+                        <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, minima!</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-300 text-xs">Lokasi - Depan Ulbi</p>
+                            <a href="../menu.html" class="border-2 border-blue-300 px-6 py-1 rounded-xl text-blue-300">
+                                <p>Pesan</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Toko Card -->
+                <div class="bg-gray-200 rounded-2xl bg-[url('https://bisnismuda.id/assets/content/20240704114126000000warmindo.jpg')] bg-cover toko-card">
+                    <div class="bg-gradient-to-b from-transparent to-[#121212] h-80 rounded-2xl p-3 grid grid-cols-1">
+                        <div class="h-40"></div>
+                        <h1 class="text-white text-xl font-semibold toko-name">Nama Toko</h1>
+                        <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, minima!</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-300 text-xs">Lokasi - Depan Ulbi</p>
+                            <a href="" class="border-2 border-blue-300 px-6 py-1 rounded-xl text-blue-300">
+                                <p>Pesan</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tambahkan lebih banyak kartu jika diperlukan -->
+            </div>
+        </section>
+        <!-- ==== End of Toko Section ==== -->
+
+        <!-- ==== Hot News Section ==== -->
+        <section>
+            <h1 class="font-semibold text-2xl pb-4">Hot News!</h1>
+            <div class="grid grid-cols-1 gap-2 pb-12">
+                <div class="bg-center bg-cover bg-[url('https://ayomakan.oss-ap-southeast-5.aliyuncs.com/general/99ddcabbe1e08988cf7fb62538523534.png')] h-80"></div>
+            </div>
+        </section>
+        <!-- ==== End of Hot News Section ==== -->
+    </main>
+
+    <footer class="bg-[#121212] text-white flex gap-2 justify-center py-12">
+        <div class="footer-content" style="text-align: center;">
+            <p>© <span id="currentYear"></span> GoBizID, Abnormal Company</p>
+            <p>Kontak Person: abnormal </p>
+            <p>Alamat: Jl. Sariasih No. 54, Kota Bandung, Indonesia</p>
+            <p>Email: company.abnormal@gmail.com | Telepon: +62 8783 6608 003</p>
+    
+            <!-- Bagian Ikuti Kami dengan Flexbox -->
+            <div style="margin-top: 20px;">
+                <p>Ikuti Kami:</p>
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <a href="" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://www.instagram.com/abnxrmally" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Pencarian -->
+    <script>
+        // Fungsi untuk memfilter kartu berdasarkan input pencarian
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchText = this.value.toLowerCase();
+            const tokoCards = document.querySelectorAll('.toko-card');
+
+            tokoCards.forEach(card => {
+                const tokoName = card.querySelector('.toko-name').textContent.toLowerCase();
+                
+                // Tampilkan atau sembunyikan kartu berdasarkan pencarian
+                if (tokoName.includes(searchText)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
