@@ -3,34 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Double Slider Login / Register</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 </head>
-<body class="bg-gradient-to-b from-purple-600 to-indigo-900 h-screen flex items-center justify-center">
-    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-lg p-10 w-full max-w-md">
-        <h2 class="text-white text-2xl font-bold text-center mb-6">Login</h2>
-        <form action="#">
-            <div class="mb-4">
-                <label for="username" class="text-white block text-sm mb-2">Username</label>
-                <input type="text" id="username" class="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="Enter your username">
-            </div>
-            <div class="mb-4">
-                <label for="password" class="text-white block text-sm mb-2">Password</label>
-                <input type="password" id="password" class="w-full px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="Enter your password">
-            </div>
-            <div class="flex items-center justify-between mb-4">
-                <label class="flex items-center text-white">
-                    <input type="checkbox" class="form-checkbox h-4 w-4 text-purple-400"> 
-                    <span class="ml-2">Remember me</span>
-                </label>
-                <a href="#" class="text-purple-300 text-sm hover:text-purple-400">Forgot password?</a>
-            </div>
-            <button type="submit" class="w-full bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 transition">Login</button>
-        </form>
-        <p class="text-center text-white text-sm mt-4">
-            Don't have an account? 
-            <a href="register.html" class="text-purple-300 hover:text-purple-400">Register</a>
-        </p>
-    </div>
+<body>
+    <div class="container" id="container"></div>
+
+        <div class="form-container register-container">
+            <form action="#">
+                <h1>Register hire.</h1>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Register</button>
+                <span>or use your account</span>
+                <div class="social-container"></div>
+                    <a href="#" class="social"><i class="lni lni-google"></i></a>
+                    <a href="#" class="social"><i class="lni lni-facebook"></i></a>
+            </form>
+        </div>
+
+        <div class="form-container login-container">
+            <form action="#">
+                <h1>Login hire.</h1>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="Remember me"></label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button>Login</button>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="lni lni-google"></i></a>
+                        <a href="#" class="social"><i class="lni lni-facebook"></i></a>
+                    </div>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay left">
+                    <h1 class="title">Hello <br> friends</h1>
+                    <p>If You have an account, login here and have fun</p>
+                    <button class="gost" id="login">Login
+                        <i class="lni lni-arrow-left login"></i>
+                    </button>
+                </div>
+                <div class="overlay-panel overlay right">
+                    <h1 class="title">Welcome <br> friends</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="register">Register
+                        <i class="lni lni-arrow-right register"></i>
+                    </button>
+                </div>
+             </div>
+        </div>
 </body>
 </html>
