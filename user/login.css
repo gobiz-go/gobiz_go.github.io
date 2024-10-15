@@ -116,7 +116,7 @@ button.ghost {
 
 button.ghost.i {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     transition: 0.3 ease-in-out;
 }
 
@@ -230,7 +230,7 @@ input {
 }
 
 .overlay {
-    /* background-image: url('../img/Peace.gif'); */
+    background-image: url('../img/Peace.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
