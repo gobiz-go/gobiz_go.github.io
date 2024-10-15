@@ -85,6 +85,7 @@ nav ul li a {
 }
 
 
+/* Style for the service section */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,19 +95,31 @@ nav ul li a {
     text-align: center;
 }
 
+/* Individual service box style */
 .service {
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for the service box */
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
 .service h2 {
     font-size: 1.2rem;
     color: #6c63ff;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+/* Color style for GoBiz span */
 .service span {
     color: #ff6f61;
 }
@@ -129,12 +142,30 @@ nav ul li a {
     margin: 10px;
 }
 
+/* Style for registration section */
 .registration {
     background-color: #f7f7f7;
     padding: 50px;
     text-align: center;
+    color: #333;
+    position: relative;
 }
 
+/* Style for the registration heading */
+.registration h2 {
+    font-size: 2.5rem;
+    color: #4e4feb;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Color and font style for "GoBiz" */
+.registration h2 span {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Flexbox for steps layout */
 .steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -142,9 +173,64 @@ nav ul li a {
     padding-top: 20px;
 }
 
+/* Style for each step */
+.step {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect on each step */
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Step number or icon style */
+.step-number {
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+/* Step title style */
 .step h3 {
     font-size: 1.2rem;
     color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph for step description */
+.step p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
 }
 
 .testimonials {
