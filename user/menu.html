@@ -8,7 +8,10 @@
 </head>
 <body class="bg-gray-100">
 
-    <div class="bg-red-500 text-white p-4 text-center">
+    <!-- Bagian Header dengan tombol Back -->
+    <div class="bg-red-500 text-white p-4 flex items-center">
+        <!-- Ikon panah Back -->
+        <span class="text-3xl mr-4 cursor-pointer" onclick="goBack()">&#8592;</span>
         <h1 class="text-2xl font-semibold">WARUNG PAK NANA</h1>
     </div>
 
@@ -151,6 +154,11 @@
                 alert('Keranjang masih kosong.');
             }
         };
+
+        // Fungsi untuk tombol Back
+        function goBack() {
+            window.history.back();
+        }
     </script>
 
 </body>
