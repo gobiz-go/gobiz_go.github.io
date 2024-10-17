@@ -90,7 +90,7 @@
             <h3 class="text-lg font-semibold text-gray-800 mb-4">Pesanan Anda</h3>
             <table class="w-full mb-4">
                 <thead>
-                    <tr class="bg-green-200 text-left">
+                    <tr class="bg-green-200 text-left text-black">
                         <th class="p-2">Nama Menu</th>
                         <th class="p-2">Harga</th>
                         <th class="p-2">Jumlah</th>
@@ -98,13 +98,13 @@
                         <th class="p-2">Aksi</th>
                     </tr>
                 </thead>
-                <tbody id="cartTable">
+                <tbody id="cartTable" class="text-black">
                     <!-- Konten Keranjang akan muncul di sini -->
                 </tbody>
             </table>
 
             <p class="text-lg font-semibold text-gray-800">Total: Rp. <span id="totalAmount">0</span></p>
-            <button id="checkoutBtn" class="bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 mt-4">Simpan Pesanan</button>
+            <button id="checkoutBtn" class="bg-green-500 text-black py-2 px-4 rounded-full hover:bg-green-600 mt-4">Simpan Pesanan</button>
         </div>
     </div>
 
@@ -152,6 +152,7 @@
                     <td class="p-2">${item.quantity}</td>
                     <td class="p-2">Rp. ${item.subtotal}</td>
                     <td class="p-2">
+                        <button class="bg-blue-500 text-white py-1 px-3 rounded-full mb-2" onclick="addToCart('${item.name}', ${item.price})">Tambah</button>
                         <button class="bg-red-500 text-white py-1 px-3 rounded-full" onclick="reduceFromCart('${item.name}', ${item.price})">Kurangi</button>
                     </td>
                 `;
