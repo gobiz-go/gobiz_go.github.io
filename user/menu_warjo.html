@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoBiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white">
+
+    <!-- Bagian Header dengan tombol Back -->
+    <div class="bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white p-4 flex items-center">
+        <!-- Ikon panah Back -->
+        <span class="text-3xl mr-4 cursor-pointer" onclick="goBack()">&#8592;</span>
+        <h1 class="text-2xl font-bold">WARNA WARUNG PAK NANA</h1>
+    </div>
+
+    <div class="flex justify-around p-6">
+        <div class="container mx-auto p-6">
+
+            <!-- Bagian Menu Makanan -->
+            <div class="bg-gradient-to-r from-green-300 to-green-500 rounded-lg p-6 shadow-md mb-6 w-full">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Silakan Pilih Menu Makanan</h3>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://img.kurio.network/zz8Lq9l4GLJT9EZz6fu7y4jXh0s=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/08/31/13bae191-984d-4029-b3cf-83116c0322be.jpe" alt="Nasi Orak-Arik Bakso">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Nasi Orak-Arik Bakso</h4>
+                        <span class="text-gray-200">Rp. 14.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Nasi Orak-Arik Bakso', 14000)">Pilih</button>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://www.tagar.id/Asset/uploads2019/1619417180951-indomie.jpg" alt="Mie Goreng">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Mie Goreng</h4>
+                        <span class="text-gray-200">Rp. 8.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Mie Goreng', 8000)">Pilih</button>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://cdn.idntimes.com/content-images/community/2022/09/food-gf3e7c3340-1920-cb2d2d7b7c11513f0cfd6d1f2b6f61da-b5f4c6c02ca913a53726666d16e2c658_600x400.jpg" alt="Mie Rebus">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Mie Rebus</h4>
+                        <span class="text-gray-200">Rp. 8.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Mie Rebus', 8000)">Pilih</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Menu Minuman -->
+            <div class="bg-gradient-to-r from-green-400 to-green-600 rounded-lg p-6 shadow-md w-full">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Silakan Pilih Menu Minuman</h3>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://asset.kompas.com/crops/NC1wNIzHla0M_zqMutdpG_4J-LY=/0x66:1000x733/750x500/data/photo/2022/10/12/63462c0db11c7.jpg" alt="Dancow Coklat">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Dancow Coklat</h4>
+                        <span class="text-gray-200">Rp. 6.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Dancow Coklat', 6000)">Pilih</button>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://id-test-11.slatic.net/p/6808a5b8d39e75eb8ec560fde2b54878.jpg" alt="Pop Ice">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Pop Ice</h4>
+                        <span class="text-gray-200">Rp. 5.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Pop Ice', 6000)">Pilih</button>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <img class="w-24 h-24 object-cover mb-2 rounded-full" src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/258caadf-18fa-4024-b4fe-1a7b3af720b9_Go-Biz_20210606_151015.jpeg" alt="Extrajos + Susu">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-gray-800 font-semibold">Extrajos + Susu</h4>
+                        <span class="text-gray-200">Rp. 6.000</span>
+                        <button class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-green-700" onclick="addToCart('Extrajos + Susu', 6000)">Pilih</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Keranjang Pesanan -->
+        <div class="bg-gradient-to-r from-green-200 via-green-300 to-green-400 rounded-lg p-6 shadow-md w-1/2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Pesanan Anda</h3>
+            <table class="w-full mb-4">
+                <thead>
+                    <tr class="bg-green-200 text-left">
+                        <th class="p-2">Nama Menu</th>
+                        <th class="p-2">Harga</th>
+                        <th class="p-2">Jumlah</th>
+                        <th class="p-2">Subtotal</th>
+                        <th class="p-2">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTable">
+                    <!-- Konten Keranjang akan muncul di sini -->
+                </tbody>
+            </table>
+
+            <p class="text-lg font-semibold text-gray-800">Total: Rp. <span id="totalAmount">0</span></p>
+            <button id="checkoutBtn" class="bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 mt-4">Simpan Pesanan</button>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        let totalAmount = 0;
+
+        function addToCart(name, price) {
+            let found = cart.find(item => item.name === name);
+            if (found) {
+                found.quantity += 1;
+                found.subtotal += price;
+            } else {
+                cart.push({name: name, price: price, quantity: 1, subtotal: price});
+            }
+            updateCart();
+        }
+
+        // Fungsi untuk mengurangi jumlah item dari keranjang
+        function reduceFromCart(name, price) {
+            let found = cart.find(item => item.name === name);
+            if (found) {
+                found.quantity -= 1;
+                found.subtotal -= price;
+
+                // Jika jumlah item sudah nol, hapus dari keranjang
+                if (found.quantity === 0) {
+                    cart = cart.filter(item => item.name !== name);
+                }
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartTable = document.getElementById('cartTable');
+            const totalDisplay = document.getElementById('totalAmount');
+            cartTable.innerHTML = ``;
+
+            totalAmount = 0;
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="p-2">${item.name}</td>
+                    <td class="p-2">Rp. ${item.price}</td>
+                    <td class="p-2">${item.quantity}</td>
+                    <td class="p-2">Rp. ${item.subtotal}</td>
+                    <td class="p-2">
+                        <button class="bg-red-500 text-white py-1 px-3 rounded-full" onclick="reduceFromCart('${item.name}', ${item.price})">Kurangi</button>
+                    </td>
+                `;
+                cartTable.appendChild(row);
+                totalAmount += item.subtotal;
+            });
+            totalDisplay.innerText = totalAmount;
+        }
+
+        document.getElementById('checkoutBtn').onclick = function() {
+            if (cart.length > 0) {
+                alert('Pesanan Anda telah disimpan.');
+            } else {
+                alert('Keranjang masih kosong.');
+            }
+        };
+
+        // Fungsi untuk tombol Back
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>
